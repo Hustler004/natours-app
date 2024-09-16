@@ -163,11 +163,11 @@ tourSchema.pre(/^find/, function (next) {
   next();
 });
 
-tourSchema.post(/^find/, function (docs, next) {
-  // console.log(docs);
-  console.log(`query took ${Date.now() - this.start} millisecs`);
-  next();
-});
+// tourSchema.post(/^find/, function (docs, next) {
+//   // console.log(docs);
+//   console.log(`query took ${Date.now() - this.start} millisecs`);
+//   next();
+// });
 
 //AGGREGATION MIDDLEWARE
 //in these middleware "this" will point to current aggregation object

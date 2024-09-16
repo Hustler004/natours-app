@@ -42,8 +42,8 @@ exports.signup = catchAsync(async (req, res, next) => {
     passwordChangedAt: req.body.passwordChangedAt,
     role: req.body.role,
   });
-  const url = `${req.protocol}://${req.get('host')}/me`;
-  console.log(url);
+  // const url = `${req.protocol}://${req.get('host')}/me`;
+  // console.log(url);
   // await new Email(newUser, url).sendWelcome();
 
   //creating jwt token here...with id as payload, secret key defined in our config.env, and expiresIn will logout the user in defined amount of time

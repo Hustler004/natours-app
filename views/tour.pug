@@ -49,7 +49,6 @@ block content
                 .overview-box__group
                     h2.heading-secondary.ma-bt-lg Your tour guides
                     each guide in tour.guides
-                        -console.log(guide)
                         .overview-box__detail
                             img.overview-box__img(src=`/img/users/${guide.photo}`, alt=`${guide.name}`)
 

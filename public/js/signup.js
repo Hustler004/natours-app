@@ -33,7 +33,7 @@ export const signup = async (user) => {
   try {
     const res = await axios({
       method: 'POST',
-      url: `http://127.0.0.1:3000/api/v2/users/signup`,
+      url: `/api/v2/users/signup`,
       data: {
         name: user.name,
         email: user.email,
@@ -43,7 +43,6 @@ export const signup = async (user) => {
     });
 
     if (res.data.status === 'success') {
-      console.log('Signup success:', res.data); // Log the success message
       showAlert('success', 'Welcome to the community!');
 
       window.setTimeout(() => {

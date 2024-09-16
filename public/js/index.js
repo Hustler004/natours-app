@@ -15,12 +15,11 @@ const signupForm = document.querySelector('#signup');
 //DELEGATIONS
 if (mapBox) {
   const locations = JSON.parse(mapBox.dataset.locations);
-  console.log(locations);
+  // console.log(locations);
   displayMap(locations);
 }
 
 if (signupForm) {
-  console.log('here');
   signupForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     const email = document.getElementById('email').value;
